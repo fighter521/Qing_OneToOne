@@ -1,0 +1,115 @@
+<resources>
+    <!--Toast dialog样式-->
+    <style name="myDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/custom_dialog_bg</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="mypopwindow_anim_style" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowEnterAnimation">@anim/shared_popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/shared_pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+
+
+
+    <style name="Translucent_NoTitle" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 设置window背景透明，也就是去边框 -->
+    </style>
+
+    <style name="sline">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="tv_middle16_white_sl" parent="@style/sline">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="right_list_name">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="FabMargin">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+
+    <!--<style name="AppTheme" parent="@android:style/Theme.Holo.Light">-->
+        <!--<item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>-->
+    <!--</style>-->
+
+    <style name="MenuTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/eighteen_sp</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+    </style>
+    <!-- Customize your theme here. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/color_white</item>
+    </style>
+    <!--飞溅页  导航页主题设置-->
+    <style name="FullScreen.Theme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--dialogWait  style-->
+    <style name="dialog_waiting" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <!-- 圆形进度条 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/darker_gray</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!--dialogWait  style-->
+    <!--search activity content RadioButton style-->
+    <style name="fragment_tools_case_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/activity_vertical_margin_half</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin_half</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin_half</item>
+        <item name="android:paddingRight">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@drawable/txt_black_to_white_selector</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--search activity content RadioButton style-->
+
+</resources>
